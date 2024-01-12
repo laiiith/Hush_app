@@ -1,0 +1,70 @@
+plugins {
+    id 'com.android.application'
+    // Add the Google services Gradle plugin
+    id 'com.google.gms.google-services'
+}
+
+android {
+    namespace 'com.example.hush'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.hush"
+        minSdk 24
+        targetSdk 34
+        multiDexEnabled true
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    // Import the Firebase BoM :enables you to manage all your Firebase library versions by specifying only one version
+    implementation platform('com.google.firebase:firebase-bom:32.6.0')
+    // When using the BoM, don't specify versions in Firebase dependencies
+    implementation 'com.google.firebase:firebase-analytics'
+    //Firebase Authentication
+    implementation 'com.google.firebase:firebase-auth'
+    //Firebase FireStore
+    implementation 'com.google.firebase:firebase-firestore'
+
+    implementation 'com.google.firebase:firebase-messaging'
+    //Firebase Cloud Storage
+    implementation 'com.google.firebase:firebase-storage'
+    // FirebaseUI for Firebase Realtime Database
+    implementation 'com.firebaseui:firebase-ui-database:8.0.2'
+    // FirebaseUI for Cloud Firestore
+    implementation 'com.firebaseui:firebase-ui-firestore:8.0.2'
+    // FirebaseUI for Firebase Auth
+    implementation 'com.firebaseui:firebase-ui-auth:8.0.2'
+    // FirebaseUI for Cloud Storage
+    implementation 'com.firebaseui:firebase-ui-storage:8.0.2'
+
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.8.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
+    implementation 'com.github.MarsadMaqsood:StylishDialogs:1.0.0'
+    implementation 'com.karumi:dexter:6.2.3'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    implementation 'com.google.android.material:material:1.10.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+}

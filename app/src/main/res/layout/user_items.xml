@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout_user_items"
+    android:padding="6dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/profileImage_user_items"
+        app:civ_border_color="@color/greenColor"
+        app:civ_border_width="2dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameTv_user_items"
+        android:text="Username"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/blackColor"
+        android:layout_toRightOf="@+id/profileImage_user_items"
+        android:layout_toEndOf="@+id/profileImage_user_items"/>
+    <TextView
+        android:id="@+id/facultyTv_user_items"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Faculty"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/nameTv_user_items"
+        android:layout_toRightOf="@+id/profileImage_user_items"
+        android:layout_toEndOf="@+id/profileImage_user_items"/>
+</RelativeLayout>

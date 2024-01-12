@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Hush</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="posts">Posts</string>
+    <string name="followers">Followers</string>
+    <string name="following">Following</string>
+    <string-array name="faculty">
+        <item>Computer Science</item>
+        <item>Software Engineer</item>
+        <item>Artificial Intelligence</item>
+        <item>Cyber Security</item>
+        <item>Computer Information System</item>
+        <item>Business Information System</item>
+    </string-array>
+</resources>

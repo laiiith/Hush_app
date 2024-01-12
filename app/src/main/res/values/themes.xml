@@ -1,0 +1,20 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Hush"
+        parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorSecondary">@color/secondaryColor</item>
+        <item name="android:fontFamily">@font/primary_font_regular</item>
+        <!-- To Change Status Bar Background To White -->
+        <item name="android:statusBarColor">@color/secondaryColor</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+    <style name="logo_style">
+        <item name="android:fontFamily">@font/logo_font_style</item>
+        <item name="fontFamily">@font/logo_font_style</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Theme.Hush" parent="Base.Theme.Hush" />
+</resources>

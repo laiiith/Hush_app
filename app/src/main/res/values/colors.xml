@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#fff</color>
+    <color name="primaryColorDark">#fff</color>
+    <color name="secondaryColor">#fff</color>
+    <color name="greenColor">#006000</color>
+    <color name="blackColor">#CB000000</color>
+    <color name="whiteColor">#fff</color>
+
+    <color name="textBoxBackgroundColor">#EFEFEF</color>
+    <color name="colorGreenLight">#00952E</color>
+    <color name="colorGreenMid">#00842E</color>
+    <color name="colorGreyLight">#E6E6E6</color>
+    <color name="colorGreyDark">#7B7B7B</color>
+    <color name="colorLightBlue">#FAFAFC</color>
+
+
+</resources>
